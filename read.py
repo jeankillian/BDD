@@ -10,13 +10,14 @@ def main():
         passwd="grimmjow26",
         database="Herboristerie"
     )
+    mycursor = mydb.cursor()
     while True:
         choice = input("choisissez 'i' pour insert, 'd' pour delete, 'l' pour list ou 'q' pour quit").lower()
         if choice == "i":
-            insert.insert(mydb)
+            insert.insert(mydb, mycursor)
 
         if choice == "d":
-            delete.delete(mydb)
+            delete.delete(mydb, mycursor)
 
         if choice == "l":
             mycursor = mydb.cursor()
