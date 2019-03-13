@@ -1,5 +1,6 @@
 from peewee import *
 import datetime
+import jsondata
 
 mysql_db = MySQLDatabase('GAME', user='killian', password='Grimmjow26', host='localhost', port=3306)
 mysql_db.connect()
@@ -62,4 +63,3 @@ class StatsPerDay(Model):
 
 mysql_db.create_tables([GameServers, ReceivedMessage, StatsPerMatch, StatsPerDay])
 print(GameServers.list_of_servers())
-print(ReceivedMessage.list_of_message())
