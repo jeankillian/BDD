@@ -1,6 +1,6 @@
 from peewee import *
 import datetime
-import jsondata
+import json
 
 mysql_db = MySQLDatabase('GAME', user='killian', password='Grimmjow26', host='localhost', port=3306)
 mysql_db.connect()

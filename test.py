@@ -1,4 +1,4 @@
-from models import *
+# from models import *
 my_date = datetime.datetime.strptime("13/03/19 12:58", "%d/%m/%y %H:%M").date()
 my_date_time = datetime.datetime.strptime("13/03/19 12:58", "%d/%m/%y %H:%M")
 
